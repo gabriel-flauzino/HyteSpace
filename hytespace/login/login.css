@@ -154,7 +154,7 @@ transition: 250ms;
 
 /* media query */
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 450px) {
 		.login-page {
 			width: calc(100% - 20px);
 			min-height: calc(100% - 20px);

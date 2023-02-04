@@ -103,7 +103,7 @@
   font-size: 145%;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 450px) {
 	.adapt-text-size {
 		font-size: 110%;
 	}
