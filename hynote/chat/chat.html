@@ -11,7 +11,7 @@
 
   <link href="/default.css" rel="stylesheet" type="text/css" />
   <link href="/reset.css" rel="stylesheet" type="text/css" />
-  <link href="/index/index.css" rel="stylesheet" type="text/css" />
+  <link href="/chat/chat.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI" crossorigin="anonymous"></script>
 </head>
 
@@ -26,10 +26,16 @@
      <source src="../imgs/background.webm" type="video/webm">
 	</video>
   <div class="content">
-    
+    <div class="users-list bg-pri text-pri adapt-text-size"></div>
+    <div id="chat" class="chat adapt-text-size"></div>
+		<div class="send-message">
+			 <textarea id="message-input" class="message-input bg-sec text-pri"></textarea>
+        <button id="submit-button" class="submit-button">></button>
+		</div>
   </div>
+
 	<script src="/default.js"></script>
-  <script src="/index/index.js"></script>
+  <script src="/chat/chat.js"></script>
 </body>
 
 </html>
