@@ -5,10 +5,12 @@ var buttonText = document.getElementById("button-text")
 var buttonLoading = document.getElementById("button-loading")
 var errorBox = document.getElementById('error');
 
-submitButton.addEventListener("click", e => {
+submitButton.addEventListener("click", submitClicked)
+
+function submitClicked(e) {
 	if ([usernameInput.value.trim(), passwordInput.value.trim()].includes("")) sendError("Required fields must be filled.")
 	else startSubmit(usernameInput.value, passwordInput.value);
-})
+}
 
 function startSubmit(username, password) {
   disableButton();

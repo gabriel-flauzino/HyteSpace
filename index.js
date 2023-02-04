@@ -12,22 +12,22 @@ const io = new Server(server)
 
 // Setting up express app and routes
 
-app.use(express.static(__dirname + '/hynote'));
+app.use(express.static(__dirname + '/hytespace'));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/hynote/index/index.html'))
+  res.sendFile(path.join(__dirname, '/hytespace/index/index.html'))
 });
 
 app.get('/login', (req, res) => {
-  res.sendFile(path.join(__dirname, '/hynote/login/login.html'))
+  res.sendFile(path.join(__dirname, '/hytespace/login/login.html'))
 });
 
 app.get('/register', (req, res) => {
-  res.sendFile(path.join(__dirname, '/hynote/register/register.html'))
+  res.sendFile(path.join(__dirname, '/hytespace/register/register.html'))
 });
 
 app.get('/__dev/test', (req, res) => {
-  res.sendFile(path.join(__dirname, '/hynote/test.html'))
+  res.sendFile(path.join(__dirname, '/hytespace/test.html'))
 })
 
 // Database
