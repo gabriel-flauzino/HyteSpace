@@ -36,13 +36,13 @@ const db = {
   users: new Database("0", "users", {
     users: []
   }),
-  channels: new Database("0", "channels", {
+  chat: new Database("0", "chat", {
     messages: []
   })
 }
 
 const data = {
-  messages: db.channels.get("messages", "_ch0"),
+  messages: db.chat.get("channel", "_0"),
   users: []
 }
 
@@ -89,7 +89,7 @@ io.on("connection", socket => {
 			nickname: message.author.nickname
 		}
     data.messages.push(message)
-    db.channels.set("messages", data.messages, "_ch0")
+    db.chat.set("channel", data.messages, "_0")
     io.emit("chatMessage", message)
   })
 	
