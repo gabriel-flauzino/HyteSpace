@@ -39,3 +39,11 @@ async function removeLoadingScreen() {
 async function wait(ms) {
 	await new Promise(r => setTimeout(r, ms));
 }
+
+function rph(str, ...replaces) {
+	for (let i = 0; i < replaces.length; i++) {
+		const replace = replaces[i];
+		str = str.replaceAll("{" + i + "}", replace);
+	}
+	return str;
+}
