@@ -1,5 +1,7 @@
 var welcome = document.getElementById("welcome")
 var usernameDiv = document.getElementById("username")
+var userMenuButton = document.getElementById("user-menu-button")
+var userMenu = document.getElementById("user-menu")
 
 var spaceUser = {
 	uuid: localStorage.getItem("uuid")
@@ -15,6 +17,16 @@ socket.emit("loginWithUUID", {
 		spaceUser = d.user;
 		connected();
 	}
+})
+
+userMenuButton.addEventListener("click", () => {
+	if (userMenu.classList.contains("menu-shown")) {
+		userMenu.classList.remove("menu-shown")
+		setTimeout(() => userMenu.style.display = "none", 250)
+	} else {
+		userMenu.style.display = "block"
+		userMenu.classList.add("menu-shown")
+	} 
 })
 
 function connected() {
