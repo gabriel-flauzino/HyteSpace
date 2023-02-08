@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyteSpace - Home</title>
+
+    <!-- Importing styles -->
+
+    <link rel="stylesheet" href="public/reset.css">
+    <link rel="stylesheet" href="public/public.css">
+    <link rel="stylesheet" href="css/index/navbar.css">
+    <link rel="stylesheet" href="css/index/content.css">
+    <link rel="stylesheet" href="css/index/main.css">
+
+    <!-- Importing scripts -->
+
+    <script src="js/index/main.js" defer></script>
+</head>
+
+<body class="default-color-gradient theme-dark">
+    <div class="navbar background-secondary">
+        <div class="nav-div nav-start">
+            <h1 class="logo text-primary">HYTE<span class="logo-colored">SPACE</span></h1>
+            <div class="nav-links">
+                <a href="#" class="nav-link link-active text-primary">Home</a>
+                <span class="links-separator"></span>
+                <a href="#" class="nav-link text-primary">Games</a>
+                <span class="links-separator"></span>
+                <a href="#" class="nav-link text-primary">Utilities</a>
+                <span class="links-separator"></span>
+                <a href="#" class="nav-link text-primary">About</a>
+                <span class="links-separator"></span>
+                <a href="#" class="nav-link text-primary">Donate</a>
+            </div>
+        </div>
+        <div class="nav-div nav-middle">
+            <div class="search-box">
+                <svg class="magnifying-glass-icon">
+                    <path
+                        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                </svg>
+                <input id="search-input" class="search-input text-primary" type="text" placeholder="Search for games, users or tools..."/>
+            </div>
+        </div>
+        <div class="nav-div nav-end">
+            <div class="user-info">
+                <div class="expandable-menu expand-down">
+                    <button class="expand-button" id="user-options-expand"><svg class="arrow-icon">
+                            <path d="M9.4,18.4l-0.7-0.7l5.6-5.6L8.6,6.4l0.7-0.7l6.4,6.4L9.4,18.4z"></path>
+                        </svg></button>
+                </div>
+                <span class="text-primary">@<span class="user-username">{0}</span></span>
+                <span class="user-avatar" id="avatar"></span>
+            </div>
+        </div>
+    </div>
+    <div class="content background-primary">
+        <h1 class="content-title text-primary">Welcome, <span class="user-username content-title-username">{0}</span>!</h1>
+    </div>
+</body>
+
+</html>

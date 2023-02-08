@@ -1,0 +1,15 @@
+.content {
+    height: 100%;
+    padding: 30px;
+}
+
+.content-title {
+    font-size: 300%;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+
+.content-title-username {
+    font-weight: 600;
+}
