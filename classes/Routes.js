@@ -18,7 +18,7 @@ class Routes {
             // console.log(resolvePath(path + sep + route.name))
             let routeData = {
                 path: resolvePath(path + sep + route.name),
-                name: route.name == "index" ? "" : route.name
+                name: route.name == "index" ? "" : route.name.replace(".", "/")
             }
 
             return routeData;
