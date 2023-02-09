@@ -5,8 +5,12 @@ body {
 }
 
 .logo {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
     font-size: 250%;
     font-weight: 900;
+		width: fit-content;
 }
 
 .logo-colored {
@@ -14,5 +18,11 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 835px) {
+	.logo {
+		width: auto;
+	}
 }
 
