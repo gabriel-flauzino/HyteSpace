@@ -58,6 +58,8 @@
     --color-5: var(--gradient-light-650);
     --color-6: var(--gradient-light-600);
     --color-7: var(--gradient-light-500);
+		--text-1: var(--gradient-dark-500);
+		--text-2: var(--gradient-dark-800);
     --inverted-1: var(--gradient-dark-500);
     --inverted-2: var(--gradient-dark-400);
     --inverted-3: var(--gradient-dark-350);
@@ -75,6 +77,8 @@
     --color-5: var(--gradient-dark-200);
     --color-6: var(--gradient-dark-150);
     --color-7: var(--gradient-dark-100);
+		--text-1: var(--gradient-light-900);
+		--text-2: var(--gradient-light-500);
     --inverted-1: var(--gradient-light-900);
     --inverted-2: var(--gradient-light-850);
     --inverted-3: var(--gradient-light-800);
@@ -99,9 +103,9 @@
 }
 
 .text-primary {
-    color: var(--inverted-1);
+	color: var(--text-1);
 }
 
 .text-secondary {
-    color: var(--inverted-3);
+    color: var(--text-2);
 }
