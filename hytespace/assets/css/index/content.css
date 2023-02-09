@@ -1,15 +1,51 @@
 .content {
-    height: 100%;
-    padding: 30px;
+		display: flex;
+		flex-direction: column;
+	  height: 100%;
+	  padding: 30px 10px;
+		gap: 8px;
 }
 
 .content-title {
     font-size: 300%;
     font-weight: 400;
-    width: 100%;
+		width: fit-content;
+		align-self: center;
+    text-align: center;
+}
+
+.content-sub-title {
+		font-size: 125%;
+    font-weight: 400;
+		width: fit-content;
+		align-self: center;
     text-align: center;
 }
 
 .content-title-username {
     font-weight: 600;
+}
+
+.content-section {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: 100%;
+}
+
+.section-items {
+	border-radius: 8px;
+	display: flex;
+	gap: 3px;
+	width: calc(100% - 16px);
+	height: 184px;
+	padding: 8px;
+	background: var(--color-4);
+}
+
+.section-item {
+	border-radius: 10px;
+	width: 150px;
+	height: 100%;
+	background: var(--color-5);
 }
